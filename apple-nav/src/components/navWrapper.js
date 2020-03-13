@@ -1,12 +1,15 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function NavWrapper() {
   return (
     <nav>
-      <Route path="/mac">Mac</Route>
-      <Route path="/ipad">Ipad</Route>
-      <Route path="/iphone">Iphone</Route>
+      <div>
+        <Link to="/ipad">Ipad</Link>
+      </div>
+      <div>
+        <Link to="/iphone">Iphone</Link>
+      </div>
     </nav>
   );
 }
